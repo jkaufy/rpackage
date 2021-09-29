@@ -1,0 +1,9 @@
+Package: rpackge
+Type: Package
+Title: Clustering Algorithms
+Version: 2021.09.28
+Author: Jacob Kaufman
+Maintainer: Jacob Kaufman <jmk478@nau.edu>
+Description: Kmeans clustering algorithm in c++ code in an R package
+License: GPL-3
+RoxygenNote: 7.1.2
