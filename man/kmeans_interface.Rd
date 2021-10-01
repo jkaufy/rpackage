@@ -3,6 +3,9 @@
 \title{
   Kmeans Clustering Algorithm
 }
+\alias{
+  kmeans_interface
+}
 \description{
   For each row in the data matrix,
   we compute the distances with all
@@ -17,7 +20,7 @@
 kmeans_interface(data_mat, clusters)
 }
 \arguments{
-\item{data.mat}{A numeric data matrix (nxp)}
+\item{data_mat}{A numeric data matrix (nxp)}
 
 \item{clusters}{The number of clusters}
 }
