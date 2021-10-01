@@ -1,5 +1,5 @@
 # rpackage
-##Installation:
+## Installation:
 
 You can install this R package by using the command:
 ```
