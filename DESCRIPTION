@@ -11,7 +11,9 @@ Description: This package is a project for my Unsupervised Learning course.
              and GMM is coded using R. 
 License: GPL (>= 2)
 Encoding: UTF-8
-Imports: 
+Depends:
+    R(>= 3.5.0)
+Imports:
     mvtnorm,
     Rcpp (>= 1.0.7)
 LinkingTo: Rcpp
