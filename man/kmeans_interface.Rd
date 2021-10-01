@@ -14,7 +14,7 @@
   numeric vector of cluster ids.
 }
 \usage{
-kmeans_interface(data_mat, K)
+kmeans_interface(data_mat, clusters)
 }
 \examples{
 

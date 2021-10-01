@@ -3,7 +3,7 @@
 #' This function computes the negative log likely on a data matrix using the
 #' Gaussian Mixture Model
 #'
-#' @param data.matrix A numeric data matrix (nxp)
+#' @param data.mat A numeric data matrix (nxp)
 #' @param K The number of clusters
 #'
 #' @return A numeric value of log.likely error
