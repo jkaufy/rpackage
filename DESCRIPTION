@@ -1,12 +1,18 @@
-Package: anRpackage
+Package: rpackage
 Type: Package
-Title: What the Package Does in One 'Title Case' Line
+Title: Clustering Algorithms (Kmeans and Gaussian Mixture Model)
 Version: 1.0
 Date: 2021-09-27
 Author: Jacob Kaufman
 Maintainer: Jacob Kaufman <jmk478@nau.edu>
-Description: One paragraph description of what the
-      package does as one or more full sentences.
+Description: This package is a project for my Unsupervised Learning course.
+             This package contains clustering alogrithms for Kmeans and 
+             Gaussian Mixture Models (GMM). Kmeans is coded using c++ and rcpp 
+             and GMM is coded using R. 
 License: GPL (>= 2)
+Encoding: UTF-8
 Imports: Rcpp (>= 1.0.7)
 LinkingTo: Rcpp
+RoxygenNote: 7.1.2
+Suggests: testthat
+

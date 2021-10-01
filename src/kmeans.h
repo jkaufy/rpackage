@@ -1,11 +1,14 @@
 #define ERROR_N_DATA_MUST_BE_POSITIVE 1
 #define ERROR_N_CENTERS_MUST_BE_POSITIVE 2
-int find_closest_center
+#define ROUND_NUM 2
+int kmeans
 (const int N_data,
  const int N_centers,
  const int N_features,
  const double *data_ptr,
- const double *centers_ptr,
+ double *centers_ptr,
+ double *mean_ptr,
  //inputs above, outputs below.
- int *cluster_ptr
+ int *cluster_ptr,
+ double *error
  );
