@@ -23,6 +23,6 @@ kmeans_interface(data_mat, K)
   K <- 3
   set.seed(1)
   (cluster.id.vec <-
-    anRpackage::find_closest_center_interface(
+    rpackage::kmeans_interface(
       data.mat, K))
 }
