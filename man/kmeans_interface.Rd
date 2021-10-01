@@ -16,6 +16,15 @@
 \usage{
 kmeans_interface(data_mat, clusters)
 }
+\arguments{
+\item{data.mat}{A numeric data matrix (nxp)}
+
+\item{clusters}{The number of clusters}
+}
+\value{
+Returns the Total Within sum of squares and a
+  numeric vector of cluster ids in a list. 
+}
 \examples{
 
   data.mat <- as.matrix(

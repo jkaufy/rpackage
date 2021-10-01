@@ -7,9 +7,9 @@
 GMM(data.mat, K)
 }
 \arguments{
-\item{K}{The number of clusters}
+\item{data.mat}{A numeric data matrix (nxp)}
 
-\item{data.matrix}{A numeric data matrix (nxp)}
+\item{K}{The number of clusters}
 }
 \value{
 A numeric value of log.likely error
