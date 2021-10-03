@@ -8,7 +8,8 @@ List kmeans_interface
   int N_data = data_mat.nrow();
   int N_features = data_mat.ncol();
   NumericMatrix centers_mat(clusters, N_features);
-  NumericMatrix mean_clusters(clusters,N_features+1);
+  NumericMatrix mean_clusters(clusters,N_features);
+  NumericVector cluster_totals(clusters);
   
   
   if(N_features != data_mat.ncol()){
@@ -20,6 +21,7 @@ List kmeans_interface
   }
   double error = 0;
   double *data_ptr = &data_mat[0];
+  double *tot_cluster_ptr = &cluster_totals[0];
   double *centers_ptr = &centers_mat[0];
   double *mean_ptr = &mean_clusters[0];
   double *error_ptr = NULL;
@@ -33,6 +35,7 @@ List kmeans_interface
      data_ptr,
      centers_ptr,
      mean_ptr,
+     tot_cluster_ptr,
      //inputs above, outputs below.
      cluster_ptr,
      error_ptr);

@@ -9,6 +9,7 @@ int kmeans
  const double *data_ptr,
  double *centers_ptr,
  double *mean_ptr,
+ double *tot_cluster_ptr,
  //inputs above, outputs below.
  int *cluster_ptr,
  double *error
@@ -56,13 +57,13 @@ int kmeans
         double data_value = data_ptr[feature_i*N_data + data_i];
         mean_ptr[feature_i*N_centers + (cluster_ptr[data_i]-1)] += data_value;
       }
-      mean_ptr[N_features*N_centers + (cluster_ptr[data_i]-1)] += 1;
+      tot_cluster_ptr[cluster_ptr[data_i]-1] += 1;
     }
     
     for(int center_i=0;center_i<N_centers; center_i++){
       for(int feature_i=0;feature_i<N_features; feature_i++){
         double new_center_value = mean_ptr[feature_i*N_centers + center_i] / 
-          mean_ptr[N_features*N_centers + center_i];
+          tot_cluster_ptr[center_i];
         centers_ptr[feature_i*N_centers + center_i] = new_center_value;
       }
     }

@@ -7,6 +7,7 @@ int kmeans
  const double *data_ptr,
  double *centers_ptr,
  double *mean_ptr,
+ double *tot_cluster_ptr,
  //inputs above, outputs below.
  int *cluster_ptr,
  double *error
