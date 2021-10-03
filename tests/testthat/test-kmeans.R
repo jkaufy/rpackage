@@ -6,4 +6,3 @@ test_that("KMEANS output vector has reasonable size/values", {
   expect_identical(length(kmeans_result[["cluster_id"]]), nrow(data.mat))
   expect_true(all(kmeans_result[["cluster_id"]] %in% 1:K))
 })
-

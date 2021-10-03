@@ -15,7 +15,7 @@ List kmeans_interface
     Rcpp::stop("number of columns in data and centers should be the same");
   }
   for(int cluster_i = 0; cluster_i < clusters ; cluster_i++){
-    int random_integer = 1 + rand() % N_data;
+    int random_integer = rand() % N_data;
     centers_mat( cluster_i , _ ) = data_mat( random_integer , _ );
   }
   double error = 0;
